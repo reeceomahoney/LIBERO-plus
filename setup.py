@@ -6,7 +6,15 @@ from setuptools import find_packages, setup
 setup(
     name="libero",
     packages=[package for package in find_packages() if package.startswith("libero")],
-    install_requires=[],
+    install_requires=[
+        "robosuite==1.4.1",
+        "bddl",
+        "easydict",
+        "mujoco",
+        "wand",
+        "scikit-image",
+        "gym",
+    ],
     eager_resources=["*"],
     include_package_data=True,
     python_requires=">=3",
