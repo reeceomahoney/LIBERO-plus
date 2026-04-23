@@ -1,0 +1,5 @@
+graft libero/libero/bddl_files
+graft libero/libero/init_files
+graft libero/libero/assets
+global-exclude __pycache__
+global-exclude *.py[cod]
