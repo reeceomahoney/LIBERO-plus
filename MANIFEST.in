@@ -1,5 +1,6 @@
 graft libero/libero/bddl_files
 graft libero/libero/init_files
 graft libero/libero/assets
+recursive-include libero *.json *.yaml *.yml *.txt
 global-exclude __pycache__
 global-exclude *.py[cod]
