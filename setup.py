@@ -13,7 +13,7 @@ setup(
         "mujoco",
         "wand",
         "scikit-image",
-        "gym",
+        "gymnasium",
     ],
     eager_resources=["*"],
     include_package_data=True,
