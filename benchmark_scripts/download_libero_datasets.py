@@ -3,8 +3,8 @@ import argparse
 import os
 import time
 
-import libero.libero.utils.download_utils as download_utils
-from libero.libero import get_libero_path
+import libero_plus.libero_plus.utils.download_utils as download_utils
+from libero_plus.libero_plus import get_libero_path
 
 
 def parse_args():

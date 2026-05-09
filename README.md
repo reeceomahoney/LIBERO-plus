@@ -49,7 +49,7 @@ cd LIBERO-plus
 ```
 
 If you have LIBERO installed, please uninstall or remove it first. Please verify if the repo path in the following configuration file needs to be updated to path_to_liberoplus_repo.
-Here are the default paths for the configuration files: `/root/.libero/config.yaml`. You can check your `libero_config_path` at `path_to_your_LIBERO_repo/libero/libero/__init__.py`.
+Here are the default paths for the configuration files: `/root/.libero/config.yaml`. You can check your `libero_config_path` at `path_to_your_LIBERO_repo/libero_plus/libero_plus/__init__.py`.
 
 Then install our new LIBERO repository
 ```bash
@@ -64,7 +64,7 @@ apt-get install libmagickwand-dev
 pip install -r extra_requirements.txt
 ```
 
-Please download our assets from [LIBERO-plus](https://huggingface.co/datasets/Sylvest/LIBERO-plus/tree/main), including hundreds of new objects, textures, and other required assets. Please unzip the `assets.zip` file to `/LIBERO-plus/libero/libero` path. You can also find the [RLDS training dataset](https://huggingface.co/datasets/Sylvest/libero_plus_rlds/tree/main) mentioned in our paper and the [OpenVLA-OFT weights after mix-SFT](https://huggingface.co/Sylvest/openvla-7b-oft-finetuned-libero-plus-mixdata/tree/main) on this dataset. We also provide [LEROBOT training dataset](https://huggingface.co/datasets/Sylvest/libero_plus_lerobot) and [training dataset for each suite](https://huggingface.co/datasets/Sylvest/libero_plus_data_4suite/tree/main).
+Please download our assets from [LIBERO-plus](https://huggingface.co/datasets/Sylvest/LIBERO-plus/tree/main), including hundreds of new objects, textures, and other required assets. Please unzip the `assets.zip` file to `/LIBERO-plus/libero_plus/libero_plus` path. You can also find the [RLDS training dataset](https://huggingface.co/datasets/Sylvest/libero_plus_rlds/tree/main) mentioned in our paper and the [OpenVLA-OFT weights after mix-SFT](https://huggingface.co/Sylvest/openvla-7b-oft-finetuned-libero-plus-mixdata/tree/main) on this dataset. We also provide [LEROBOT training dataset](https://huggingface.co/datasets/Sylvest/libero_plus_lerobot) and [training dataset for each suite](https://huggingface.co/datasets/Sylvest/libero_plus_data_4suite/tree/main).
 
 The extracted directory structure should look like:
 
@@ -88,7 +88,7 @@ LIBERO-plus/
 ## 🔧 Evaluation
 The evaluation method is almost identical to `LIBERO`. The only required modification is adjusting `num_trials_per_task` from 50 to 1 in your configuration.
 
-The mapping between task IDs, perturbation categories, and difficulty levels is provided in `.libero/libero/benchmark/task_classification.json`.
+The mapping between task IDs, perturbation categories, and difficulty levels is provided in `.libero_plus/libero_plus/benchmark/task_classification.json`.
 
 ## 📊 LIBERO-Plus Benchmark Leaderboard
 | Model | Camera | Robot | Language | Light | Background | Noise | Layout | Total |

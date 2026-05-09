@@ -4,8 +4,8 @@ from os import path
 from setuptools import find_packages, setup
 
 setup(
-    name="libero",
-    packages=[package for package in find_packages() if package.startswith("libero")],
+    name="libero_plus",
+    packages=[package for package in find_packages() if package.startswith("libero_plus")],
     install_requires=[
         "robosuite==1.4.1",
         "bddl",
@@ -26,10 +26,10 @@ setup(
     long_description_content_type="text/markdown",
     entry_points={
         "console_scripts": [
-            "lifelong.main=libero.lifelong.main:main",
-            "lifelong.eval=libero.lifelong.evaluate:main",
-            "libero.config_copy=scripts.config_copy:main",
-            "libero.create_template=scripts.create_template:main",
+            "lifelong.main=libero_plus.lifelong.main:main",
+            "lifelong.eval=libero_plus.lifelong.evaluate:main",
+            "libero_plus.config_copy=scripts.config_copy:main",
+            "libero_plus.create_template=scripts.create_template:main",
         ]
     },
 )

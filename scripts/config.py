@@ -1,6 +1,6 @@
 import os
 import shutil
-from libero.libero import get_libero_path
+from libero_plus.libero_plus import get_libero_path
 
 
 def main():

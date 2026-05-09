@@ -5,8 +5,8 @@ This is a script for creating various files frrom templates. This is to ease the
 import os
 import xml.etree.ElementTree as ET
 
-from libero.libero import get_libero_path
-from libero.libero.envs.textures import get_texture_file_list
+from libero_plus.libero_plus import get_libero_path
+from libero_plus.libero_plus.envs.textures import get_texture_file_list
 
 
 def create_problem_class_from_file(class_name):
@@ -59,7 +59,7 @@ def create_scene_xml_file(scene_name):
     tree.write(f"{scene_name}.xml", encoding="utf-8")
     print(f"Creating scene {scene_name} at the file: {scene_name}.xml")
     print(
-        "\n [Notice] The texture fiile paths are specified in the relative path format assuming your scene xml will be placed in the path libero/libero/assets/scenes/. "
+        "\n [Notice] The texture fiile paths are specified in the relative path format assuming your scene xml will be placed in the path libero_plus/libero_plus/assets/scenes/. "
     )
     return
 

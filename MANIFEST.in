@@ -1,6 +1,6 @@
-graft libero/libero/bddl_files
-graft libero/libero/init_files
-graft libero/libero/assets
-recursive-include libero *.json *.yaml *.yml *.txt
+graft libero_plus/libero_plus/bddl_files
+graft libero_plus/libero_plus/init_files
+graft libero_plus/libero_plus/assets
+recursive-include libero_plus *.json *.yaml *.yml *.txt
 global-exclude __pycache__
 global-exclude *.py[cod]

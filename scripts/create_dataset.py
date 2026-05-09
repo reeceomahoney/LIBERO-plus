@@ -9,13 +9,13 @@ import robosuite.utils.transform_utils as T
 import robosuite.macros as macros
 
 import init_path
-import libero.libero.utils.utils as libero_utils
+import libero_plus.libero_plus.utils.utils as libero_utils
 import cv2
 from PIL import Image
 from robosuite.utils import camera_utils
 
-from libero.libero.envs import *
-from libero.libero import get_libero_path
+from libero_plus.libero_plus.envs import *
+from libero_plus.libero_plus import get_libero_path
 
 def main():
     parser = argparse.ArgumentParser()

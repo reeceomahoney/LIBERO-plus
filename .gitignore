@@ -14,5 +14,7 @@ bert/
 logs/
 custom_pddl/
 libero.egg-info/
+libero_plus.egg-info/
+build/
 .vscode/
-libero/libero/assets/
+libero_plus/libero_plus/assets/

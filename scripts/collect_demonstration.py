@@ -14,8 +14,8 @@ from robosuite.wrappers import DataCollectionWrapper, VisualizationWrapper
 from robosuite.utils.input_utils import input2action
 
 
-import libero.libero.envs.bddl_utils as BDDLUtils
-from libero.libero.envs import *
+import libero_plus.libero_plus.envs.bddl_utils as BDDLUtils
+from libero_plus.libero_plus.envs import *
 
 
 def collect_human_trajectory(
