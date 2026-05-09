@@ -7,7 +7,7 @@ setup(
     name="libero_plus",
     packages=[package for package in find_packages() if package.startswith("libero_plus")],
     install_requires=[
-        "robosuite==1.4.1",
+        "robosuite>=1.4.0,<1.5",
         "bddl",
         "easydict",
         "mujoco",
